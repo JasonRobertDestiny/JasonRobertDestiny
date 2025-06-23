@@ -2,10 +2,6 @@
 
 **Full-Stack Developer | Web3 & AI Enthusiast**
 
-## 🌱 Currently Learning
-- Web3 development
-- AI agent systems
-
 ## 💻 Tech Stack
 **Backend:**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -20,5 +16,3 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-## 📫 Contact
-[![Email](https://img.shields.io/badge/Johnrobertdestiny@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:Johnrobertdestiny@gmail.com)
