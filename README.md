@@ -3,12 +3,12 @@
 **Full-Stack Developer | Web3 & AI Enthusiast**
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JasonRobertDestiny&show_icons=true&theme=radical&hide_border=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasonRobertDestiny&layout=compact&theme=radical&hide_border=true&langs_count=6"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JasonRobertDestiny&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=1800"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JasonRobertDestiny&layout=compact&theme=radical&hide_border=true&langs_count=6&cache_seconds=1800"/>
 </div>
 
 ## 🎯 Featured Project
-[![MeetSpot](https://github-readme-stats.vercel.app/api/pin/?username=JasonRobertDestiny&repo=MeetSpot&theme=radical&hide_border=true)](https://github.com/JasonRobertDestiny/MeetSpot)
+[![MeetSpot](https://github-readme-stats.vercel.app/api/pin/?username=JasonRobertDestiny&repo=MeetSpot&theme=radical&hide_border=true&cache_seconds=1800)](https://github.com/JasonRobertDestiny/MeetSpot)
 
 ## 💻 Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
