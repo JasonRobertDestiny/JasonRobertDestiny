@@ -14,7 +14,7 @@
 
 ## 🎯 Featured Project
 [![MeetSpot](https://github-readme-stats.vercel.app/api/pin/?username=JasonRobertDestiny&repo=MeetSpot&theme=radical&hide_border=true&cache_seconds=1800)](https://github.com/JasonRobertDestiny/MeetSpot)
-
+[![VibeDoc](https://github-readme-stats.vercel.app/api/pin/?username=JasonRobertDestiny\&repo=VibeDoc\&theme=radical\&hide_border=true\&cache_seconds=1800)](https://github.com/JasonRobertDestiny/VibeDoc)
 ## 💻 Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
