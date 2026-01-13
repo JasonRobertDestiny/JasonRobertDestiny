@@ -48,6 +48,6 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/JasonRobertDestiny)
 [![Blog](https://img.shields.io/badge/-个人博客-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://jasonrobertdestiny.github.io/)
 [![ModelScope](https://img.shields.io/badge/-魔塔空间-6B4FBB?style=for-the-badge&logo=huggingface&logoColor=white)](https://www.modelscope.cn/profile/JasonRobert)
-![WeChat](https://img.shields.io/badge/-微信:__jasonrobert-07C160?style=for-the-badge&logo=wechat&logoColor=white)
+![WeChat](https://img.shields.io/badge/-微信:calderio-07C160?style=for-the-badge&logo=wechat&logoColor=white)
 
 </div>
