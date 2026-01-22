@@ -1,6 +1,7 @@
 # Hi there 👋 I'm Calder
 
-**Full-Stack Developer | Web3 & AI Enthusiast**
+**Full-Stack Developer  
+Web3 & AI Agent Enthusiast**
 
 <div align="center">
 
