@@ -7,7 +7,7 @@ Web3 & AI Agent Enthusiast**
 
   <img height="180em" src="https://github-readme-stats-tau-eosin-56.vercel.app/api?username=calderbuild&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=86400"/>
 
-  <img height="180em" src="https://github-readme-stats-tau-eosin-56.vercel.app/api/top-langs/?username=calderbuild&layout=compact&theme=radical&hide_border=true&langs_count=6&cache_seconds=86400"/>
+  <img height="180em" src="https://github-readme-stats-tau-eosin-56.vercel.app/api/top-langs/?username=calderbuild&layout=compact&theme=radical&hide_border=true&langs_count=6&cache_seconds=86400&v=2"/>
 
 </div>
 
