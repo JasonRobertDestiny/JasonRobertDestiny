@@ -5,9 +5,9 @@ Web3 & AI Agent Enthusiast**
 
 <div align="center">
 
-  <img height="180em" src="https://github-readme-stats-tau-eosin-56.vercel.app/api?username=calderbuild&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=86400"/>
+  <img height="180em" src="./assets/github-stats.svg" alt="Calder's GitHub stats"/>
 
-  <img height="180em" src="https://github-readme-stats-tau-eosin-56.vercel.app/api/top-langs/?username=calderbuild&layout=compact&theme=radical&hide_border=true&langs_count=6&cache_seconds=86400&v=2"/>
+  <img height="180em" src="./assets/top-langs.svg" alt="Calder's most used languages"/>
 
 </div>
 
@@ -16,10 +16,10 @@ Web3 & AI Agent Enthusiast**
 ## 🎯 Featured Projects
 
 <a href="https://github.com/calderbuild/MeetSpot">
-  <img src="https://github-readme-stats-tau-eosin-56.vercel.app/api/pin/?username=calderbuild&repo=MeetSpot&theme=radical&hide_border=true&cache_seconds=86400"/>
+  <img src="./assets/pin-meetspot.svg" alt="MeetSpot"/>
 </a>
 <a href="https://github.com/calderbuild/VibeDoc">
-  <img src="https://github-readme-stats-tau-eosin-56.vercel.app/api/pin/?username=calderbuild&repo=VibeDoc&theme=radical&hide_border=true&cache_seconds=86400"/>
+  <img src="./assets/pin-vibedoc.svg" alt="VibeDoc"/>
 </a>
 
 ---

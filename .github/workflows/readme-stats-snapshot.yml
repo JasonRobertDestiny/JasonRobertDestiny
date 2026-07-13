@@ -1,0 +1,92 @@
+name: Snapshot README stats cards
+
+# Fetch the github-readme-stats cards from the Vercel endpoint and commit them
+# as static SVGs. The README points at these committed files, so a broken or
+# rate-limited endpoint can never show up as a broken image on the profile:
+# a failed fetch keeps the last good snapshot instead of overwriting it.
+
+on:
+  schedule:
+    - cron: '17 */12 * * *'   # every 12h, offset off the hour
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/readme-stats-snapshot.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-stats-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and validate cards
+        run: |
+          set -uo pipefail
+          BASE="https://github-readme-stats-tau-eosin-56.vercel.app"
+          mkdir -p assets
+
+          # filename -> endpoint URL
+          urls_keys=(
+            "assets/github-stats.svg"
+            "assets/top-langs.svg"
+            "assets/pin-meetspot.svg"
+            "assets/pin-vibedoc.svg"
+          )
+          urls_vals=(
+            "$BASE/api?username=calderbuild&show_icons=true&theme=radical&hide_border=true&count_private=true"
+            "$BASE/api/top-langs/?username=calderbuild&layout=compact&theme=radical&hide_border=true&langs_count=6"
+            "$BASE/api/pin/?username=calderbuild&repo=MeetSpot&theme=radical&hide_border=true"
+            "$BASE/api/pin/?username=calderbuild&repo=VibeDoc&theme=radical&hide_border=true"
+          )
+
+          hard_fail=0
+          for i in "${!urls_keys[@]}"; do
+            out="${urls_keys[$i]}"
+            url="${urls_vals[$i]}"
+            tmp="$(mktemp)"
+            ok=0
+            for attempt in 1 2 3 4 5; do
+              code="$(curl -sS -o "$tmp" -w '%{http_code}' --max-time 30 "$url" || echo 000)"
+              if [ "$code" = "200" ] \
+                 && grep -q '<svg' "$tmp" \
+                 && [ "$(wc -c < "$tmp")" -gt 1000 ] \
+                 && ! grep -qiE 'something went wrong|maximum retries|bad credentials|invalid username|could not fetch|>error<|rate limit' "$tmp"; then
+                ok=1; break
+              fi
+              echo "attempt $attempt for $out failed (code=$code) -- retrying"
+              sleep 10
+            done
+            if [ "$ok" = "1" ]; then
+              mv "$tmp" "$out"
+              echo "OK   $out"
+            else
+              rm -f "$tmp"
+              if [ -f "$out" ]; then
+                echo "SKIP $out -- fetch failed, kept last good snapshot"
+              else
+                echo "FAIL $out -- fetch failed and no prior snapshot exists"
+                hard_fail=1
+              fi
+            fi
+          done
+          exit "$hard_fail"
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if git diff --staged --quiet; then
+            echo "No snapshot changes."
+          else
+            git commit -m "chore: snapshot README stats cards"
+            git push
+          fi
