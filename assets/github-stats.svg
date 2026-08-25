@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Calder's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 1416, Total Commits in 2026 : 704, Total PRs: 42, Total Issues: 25, Contributed to (last year): 9</desc>
+        <desc id="descId">Total Stars Earned: 1417, Total Commits in 2026 : 704, Total PRs: 42, Total Issues: 25, Contributed to (last year): 9</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 78.59455694400661;
+        stroke-dashoffset: 78.59260923297009;
       }
     }
   
